@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "/home/reagan/Desktop/Food-Delivery-UI-master/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "C:\\Users\\jaywa\\Desktop\\me\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/reagan/Desktop/Food-Delivery-UI-master/android/app/src/main/res/values-night/styles.xml",
+                    "source": "C:\\Users\\jaywa\\Desktop\\me\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "172,806",
+                        "startOffsets": "175,820",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "464,970"
+                        "endOffsets": "471,986"
                     },
                     "to": {
                         "startLines": "2,7",
