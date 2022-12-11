@@ -103,7 +103,28 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   color: Colors.deepOrangeAccent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12)),
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (ctx) => AlertDialog(
+                        title: const Text("Reviews Information"),
+                        content: Text(
+                            "your submission has been recorded successfully"),
+                        actions: <Widget>[
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(ctx).pop();
+                            },
+                            child: Container(
+                              color: Colors.white,
+                              padding: const EdgeInsets.all(14),
+                              child: const Text("okay"),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
                   child: Text(
                     "Reviews",
                     style: TextStyle(color: Colors.white, fontSize: 20),
@@ -115,7 +136,28 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                   color: Colors.deepOrangeAccent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12)),
-                  onPressed: () {},
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (ctx) => AlertDialog(
+                        title: const Text("Contact Information"),
+                        content: Text(
+                            "Name: Louis Maina, phone number: 0792342383 "),
+                        actions: <Widget>[
+                          TextButton(
+                            onPressed: () {
+                              Navigator.of(ctx).pop();
+                            },
+                            child: Container(
+                              color: Colors.white,
+                              padding: const EdgeInsets.all(14),
+                              child: const Text("okay"),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
                   child: Text(
                     "Contact",
                     style: TextStyle(color: Colors.white, fontSize: 20),
@@ -185,7 +227,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                     fontWeight: FontWeight.w600),
               ),
               Text(
-                "\$${menuItems.price}",
+                "Ksh.${menuItems.price}",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 18,
@@ -202,7 +244,28 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
                     color: Colors.deepOrangeAccent,
                     borderRadius: BorderRadius.circular(30)),
                 child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (ctx) => AlertDialog(
+                          title: const Text("Item added to cart"),
+                          content:
+                              Text("the item selected is successfully added"),
+                          actions: <Widget>[
+                            TextButton(
+                              onPressed: () {
+                                Navigator.of(ctx).pop();
+                              },
+                              child: Container(
+                                color: Colors.white,
+                                padding: const EdgeInsets.all(14),
+                                child: const Text("okay"),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
                     icon: Icon(
                       Icons.add,
                       color: Colors.white,

@@ -2,8 +2,10 @@ import 'package:_food_delivery_ui_practice/data/data.dart';
 import 'package:_food_delivery_ui_practice/models/restaurant.dart';
 import 'package:_food_delivery_ui_practice/screens/cart_screen.dart';
 import 'package:_food_delivery_ui_practice/screens/restaurant_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutterfire_ui/auth.dart';
 
 import '../widgets/recent_order.dart';
 
@@ -20,15 +22,32 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        title: const Text("Food Genie"),
+        title: const Text("Food Ordering App"),
         backgroundColor: Colors.deepOrangeAccent,
         centerTitle: true,
         leading: IconButton(
-            onPressed: () {}, icon: const Icon(Icons.account_circle, size: 30)),
+            onPressed: () {
+              FirebaseAuth.instance.signOut();
+              /*  Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Scaffold(
+                    appBar: AppBar(
+                      title: const Text("Profile"),
+                      backgroundColor: Colors.deepOrangeAccent,
+                    ),
+                    body: ProfileScreen(
+                      
+                    ),
+                  ),
+                ),
+              ); */
+            },
+            icon: const Icon(Icons.account_circle, size: 30)),
         actions: [
           TextButton(
               onPressed: () => Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => CartScreen())),
+                  MaterialPageRoute(builder: (context) => const CartScreen())),
               child: Text(
                 "Cart (${currentUser.cart.length})",
                 style: const TextStyle(color: Colors.white, fontSize: 20),

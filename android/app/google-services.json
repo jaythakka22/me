@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "769491253471",
+    "project_id": "food-order-7bb20",
+    "storage_bucket": "food-order-7bb20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769491253471:android:0a30c391a542daed34516a",
+        "android_client_info": {
+          "package_name": "com.example.u_food_delivery_ui_practic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769491253471-pipqr84mfamu4dnmn8i9vj5sn6o8u00m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8K5FQvtkzjPH_KimVIIrFw4bLoNVuaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769491253471-pipqr84mfamu4dnmn8i9vj5sn6o8u00m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769491253471:android:4f6a30b3d2a5d50d34516a",
+        "android_client_info": {
+          "package_name": "com.example.u_food_delivery_ui_practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769491253471-pipqr84mfamu4dnmn8i9vj5sn6o8u00m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8K5FQvtkzjPH_KimVIIrFw4bLoNVuaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769491253471-pipqr84mfamu4dnmn8i9vj5sn6o8u00m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

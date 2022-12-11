@@ -212,7 +212,7 @@ class _CartScreenState extends State<CartScreen> {
           Container(
             margin: const EdgeInsets.all(12),
             child: Text(
-              "\$${order.food.price * order.quantity}",
+              "ksh.${order.food.price * order.quantity}",
               style: const TextStyle(
                   color: Colors.black,
                   fontSize: 16,
